@@ -1,4 +1,4 @@
-const elasticsearch=require('elasticsearch');
+var elasticsearch=require('elasticsearch');
 
 /* var client = new elasticsearch.Client( {  
   hosts: [
@@ -6,11 +6,9 @@ const elasticsearch=require('elasticsearch');
     'https://[username]:[password]@[server]:[port]/'
   ]
 }); */
-// console.log(elasticsearch);
 
 var client =  new elasticsearch.Client({
-	// host: '127.0.0.1:9200',  // this is for local elasticsearch
-    host: 'YOUR_ELASTIC_SERVER_HOST',
+    host: '127.0.0.1:9200', // this is your local elastic host
     log: 'error'
   });
 

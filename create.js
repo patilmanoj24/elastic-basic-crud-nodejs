@@ -1,7 +1,7 @@
 var client = require('./connection.js');
 
 client.indices.create({  
-  index: 'newdev_skus' // change the indexname if you want 
+  index: 'newdev_skus'
 },function(err,resp,status) {
   if(err) {
     console.log(err);

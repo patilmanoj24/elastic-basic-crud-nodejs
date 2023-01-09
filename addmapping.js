@@ -1,4 +1,3 @@
-
 // const esClient = require('./client');
 var esClient = require('./connection.js');
 const addmappingToIndex = async function(indexName, mappingType, mapping){
@@ -25,19 +24,19 @@ async function test(){
                 type: "keyword"
             },
             sku_display_name: {
-                type: "keyword"
+                type: "text"
             },
             outlet_id: {
                 type: "integer"
             },
             outlet_name: {
-                type: "keyword"
+                type: "text"
             },
             airport_id: {
                 type: "integer"
             },
             sku_for: {
-                type: "integer"
+                type: "text"
             },
             description: {
                 type: "text"
@@ -49,28 +48,25 @@ async function test(){
                 type: "text"
             },
             mrp: {
-                type: "float"
+                type: "text"
             },
             selling_price_without_tax: {
-                type: "float"
+                type: "text"
             },
             selling_price_with_tax: {
-                type: "float"
+                type: "text"
             },
             discount_percent: {
-                type: "float"
+                type: "text"
             },
             discount_amount: {
-                type: "float"
+                type: "text"
             },
             brand_id: {
                 type: "integer"
             },
             brand_name: {
                 type: "text"
-            },
-            is_top_selling: {
-                type: "integer"
             },
             primary_category_id: {
                 type: "integer"
@@ -104,11 +100,8 @@ async function test(){
                     key: {
                       "type": "keyword"
                     },
-                    textvalue: {
+                    value: {
                       "type": "keyword"
-                    },
-                    intvalue: {
-                      "type": "text"
                     }
                   }
                 },
@@ -127,4 +120,4 @@ async function test(){
 }
 
 
-test();
+// test();

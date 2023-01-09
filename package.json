@@ -1,0 +1,7 @@
+{
+  "lockfileVersion": 1,
+  "dependencies": {
+    "@elastic/elasticsearch": "^7.6.1",
+    "elasticsearch": "^16.7.1"
+  }
+}
